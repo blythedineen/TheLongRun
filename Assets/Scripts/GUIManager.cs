@@ -14,6 +14,7 @@ public class GUIManager : MonoBehaviour {
         GameEventManager.GameOver += GameOver;
         gameOverText.enabled = false;
         title.enabled = true;
+        distanceText.enabled = false;
         button.gameObject.SetActive(true);
 
     }
@@ -27,6 +28,7 @@ public class GUIManager : MonoBehaviour {
 
     private void GameStart() {
         button.gameObject.SetActive(false);
+        distanceText.enabled = true;
         gameOverText.enabled = false;
         title.enabled = false;
         enabled = false;

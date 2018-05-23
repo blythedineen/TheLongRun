@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{7DA2FCED-3DB2-1B55-17FF-4880439F20A5}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Runner.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GUIManager.cs" Line="28" Column="5" />
+      <File FileName="Assets/Scripts/Runner.cs" Line="49" Column="25" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
