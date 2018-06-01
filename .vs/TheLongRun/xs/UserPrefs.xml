@@ -1,6 +1,13 @@
 ﻿<Properties StartupConfiguration="{7DA2FCED-3DB2-1B55-17FF-4880439F20A5}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Multi/GUIManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Multi/Runner.cs" Line="9" Column="31" />
+      <File FileName="Assets/Scripts/Multi/Runner2.cs" Line="107" Column="2" />
+      <File FileName="Assets/Scripts/Multi/GUIManager.cs" Line="46" Column="31" />
+      <File FileName="Assets/Scripts/Single/GUIManagerS.cs" Line="17" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

@@ -6,18 +6,29 @@ public class Runner2 : MonoBehaviour
 {
 
     public static float distanceTraveled;
-    private Camera cam;
+    public Camera cam;
     public float acceleration;
     private bool touchingPlatform;
     public Vector3 jumpVelocity;
     public float gameOverY;
     private Vector3 startPosition;
+    private Vector3 runner;
 
 
-    void Update() {
-        cam.transform.position = new Vector3(transform.localPosition.x + 5, 15, -40);
+    void Update()
+    {
+        runner = GameObject.Find("Player 1").transform.position;
+        if (runner.x > transform.localPosition.x)
+        {
+            cam.transform.position = new Vector3(runner.x + 5, 15, -40);
+        }
+        else if (runner.x < transform.localPosition.x)
+        {
+            cam.transform.position = new Vector3(transform.localPosition.x + 5, 15, -40);
+        }
 
-        if (touchingPlatform && Input.GetKeyDown(KeyCode.UpArrow)) {
+        if (touchingPlatform && Input.GetKeyDown(KeyCode.UpArrow))
+        {
             GetComponent<Rigidbody>().AddForce(jumpVelocity, ForceMode.VelocityChange);
             touchingPlatform = false;
         }
@@ -27,6 +38,14 @@ public class Runner2 : MonoBehaviour
         GUIManager.SetDistance(distanceTraveled);
         if (transform.localPosition.y < gameOverY)
         {
+            if (runner.x > transform.localPosition.x)
+            {
+                GUIManager.setWinner("Player 1");
+            }
+            else if (runner.x < transform.localPosition.x)
+            {
+                GUIManager.setWinner("Player 2");
+            }
             GameEventManager.TriggerGameOver();
         }
     }
@@ -54,12 +73,14 @@ public class Runner2 : MonoBehaviour
         GameEventManager.GameStart += GameStart;
         GameEventManager.GameOver += GameOver;
         startPosition = new Vector3(0, 3, 0);
-     
-        foreach (Camera c in Camera.allCameras) {
-                if (c.gameObject.name == "cam2") {
-                    cam = c;
-                }
+
+        foreach (Camera c in Camera.allCameras)
+        {
+            if (c.gameObject.name == "cam2")
+            {
+                cam = c;
             }
+        }
         //GetComponent<Material>().SetColor("diffuse", new Color32(255,0,0, 0));
 
         GetComponent<MeshRenderer>().enabled = false;

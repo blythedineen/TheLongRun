@@ -1,14 +1,14 @@
 OSXStandalone
 PlayerPath?
-/Users/blythe.dineen19/Desktop/TheLongRun-master/game.app
+/Users/ayesha/Desktop/game/TheLongRun/game.app
 SceneListBegin?
 Assets/Scenes/title_page.unity
 Assets/Scenes/main_scene.unity
-Assets/Scenes/multiplayer.unity
 Assets/Scenes/Level_Select.unity
 Assets/Scenes/Level1.unity
 Assets/Scenes/Level2.unity
 Assets/Scenes/Level3.unity
+Assets/Scenes/multiplayer.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -22,7 +22,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-0efd9e4b43d9d2f31ce6b029dc7b1379 Assembly-CSharp.dll:.Runner
+ada46f4e2cdd8ae199b9a275eef8dc74 Assembly-CSharp.dll:.Runner
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -99,6 +99,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SceneChange
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Control
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -123,7 +124,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
-cf3e9493ebe4846c4f67abec565eb59c Assembly-CSharp.dll:.GUIManager
+8c9c95a1e10e03e0e4e8cc90f9be747a Assembly-CSharp.dll:.GUIManager
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -157,8 +158,9 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+513bc717eba7e9f31ca81e0d542e5066 Assembly-CSharp.dll:.Pipe
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-0efd9e4b43d9d2f31ce6b029dc7b1379 Assembly-CSharp.dll:.Runner2
+ada46f4e2cdd8ae199b9a275eef8dc74 Assembly-CSharp.dll:.Runner2
 51c0ecd24dff72f3157d1d6f5ebb74da Assembly-CSharp.dll:.PlatformManagerS
 528adac9b46a1f1f01a40a3d318453e4 Assembly-CSharp.dll:.SkylineManagerS
 b5f8f43660760a4121dd3acf5260919a Assembly-CSharp.dll:.GUIManagerS

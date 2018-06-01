@@ -1,20 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-                 
+
 public class Runner : MonoBehaviour {
-    
+
+    public Camera cam;
     public static float distanceTraveled;
-    private Camera cam;
     public float acceleration;
     private bool touchingPlatform;
     public Vector3 jumpVelocity;
     public float gameOverY;
     private Vector3 startPosition;
-
+    private Vector3 runner2;
 
     void Update() {
-        cam.transform.position = new Vector3(transform.localPosition.x+5, 15, -40);
+        runner2 = GameObject.Find("Player 2").transform.position;
+        if (runner2.x > transform.localPosition.x) {
+            cam.transform.position = new Vector3(runner2.x + 5, 15, -40);
+        } else if (runner2.x < transform.localPosition.x) {
+            cam.transform.position = new Vector3(transform.localPosition.x + 5, 15, -40);
+        }
 
         if (touchingPlatform && Input.GetButtonDown("Jump")) {
             GetComponent<Rigidbody>().AddForce(jumpVelocity, ForceMode.VelocityChange);
@@ -24,11 +29,17 @@ public class Runner : MonoBehaviour {
         distanceTraveled = transform.localPosition.x;
         GUIManager.SetDistance(distanceTraveled);
         if (transform.localPosition.y < gameOverY) {
+            if (runner2.x > transform.localPosition.x) {
+                GUIManager.setWinner("Player 2");
+            }
+            else if (runner2.x < transform.localPosition.x) {
+                GUIManager.setWinner("Player 1");
+            }
             GameEventManager.TriggerGameOver();
         }
     }
 
-    void FixedUpdate(){
+    void FixedUpdate() {
         if (touchingPlatform) {
             GetComponent<Rigidbody>().AddForce(acceleration, 0f, 0f, ForceMode.Acceleration);
         }
@@ -46,12 +57,6 @@ public class Runner : MonoBehaviour {
         GameEventManager.GameStart += GameStart;
         GameEventManager.GameOver += GameOver;
         startPosition = new Vector3(0, 3, 0);
-        foreach (Camera c in Camera.allCameras) {
-                if (c.gameObject.name == "cam1") {
-                    cam = c;
-                }
-            }
-
         //GetComponent<Material>().SetColor("diffuse", new Color32(255,0,0, 0));
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;

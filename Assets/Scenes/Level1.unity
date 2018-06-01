@@ -4122,7 +4122,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: title_page
+          m_StringArgument: Level_Select
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1381036801}
@@ -7477,7 +7477,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1142955765
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11146,7 +11146,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Return to Main Menu
+  m_Text: Return to Level Select
 --- !u!222 &1717578500
 CanvasRenderer:
   m_ObjectHideFlags: 0
