@@ -2,28 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Runner2 : MonoBehaviour{
+public class Runner2 : MonoBehaviour
+{
 
     public static float distanceTraveled;
-    public Camera cam;
+    private Camera cam;
     public float acceleration;
     private bool touchingPlatform;
     public Vector3 jumpVelocity;
     public float gameOverY;
     private Vector3 startPosition;
-    private Vector3 runner;
 
 
     void Update() {
-        runner = GameObject.Find("Player 1").transform.position;
-        if (runner.x > transform.localPosition.x)
-        {
-            cam.transform.position = new Vector3(runner.x + 5, 15, -40);
-        }
-        else if (runner.x < transform.localPosition.x)
-        {
-            cam.transform.position = new Vector3(transform.localPosition.x + 5, 15, -40);
-        }
+        cam.transform.position = new Vector3(transform.localPosition.x + 5, 15, -40);
 
         if (touchingPlatform && Input.GetKeyDown(KeyCode.UpArrow)) {
             GetComponent<Rigidbody>().AddForce(jumpVelocity, ForceMode.VelocityChange);
@@ -35,14 +27,6 @@ public class Runner2 : MonoBehaviour{
         GUIManager.SetDistance(distanceTraveled);
         if (transform.localPosition.y < gameOverY)
         {
-            if (runner.x > transform.localPosition.x)
-            {
-                GUIManager.setWinner("Player 1");
-            }
-            else if (runner.x < transform.localPosition.x)
-            {
-                GUIManager.setWinner("Player 2");
-            }
             GameEventManager.TriggerGameOver();
         }
     }

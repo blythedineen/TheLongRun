@@ -286,14 +286,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1902307578}
-        m_MethodName: dontChange
-        m_Mode: 1
+        m_MethodName: changeMenu
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: title_page
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1902307578}
@@ -429,8 +429,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceText: {fileID: 1223360050}
-  gameOver: {fileID: 1337405090}
-  winner: {fileID: 410489882}
 --- !u!1 &410489880
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,7 +845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066476fc4bac04329b0396f354a2a5b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 105492325}
   acceleration: 7
   jumpVelocity: {x: 1, y: 5, z: 0}
   gameOverY: -6
@@ -1230,7 +1227,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1902307577}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4259483d45714cc59388f14b5f59638, type: 3}
+  m_Script: {fileID: 11500000, guid: 24c771838f06846cbbb74506de722abc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1902307579
@@ -1292,7 +1289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe816c41b154248b691a5ed9c49696ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 105492325}
   acceleration: 7
   jumpVelocity: {x: 1, y: 5, z: 0}
   gameOverY: -6

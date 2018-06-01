@@ -190,14 +190,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1586502370}
-        m_MethodName: title
-        m_Mode: 1
+        m_MethodName: changeMenu
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: title_page
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1586502370}
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4224822724291466, guid: 426e4ff98da504aae8f5b4f14f2e0464, type: 2}
-  numberOfObjects: 10
+  numberOfObjects: 50
   recycleOffset: 60
   startPosition: {x: -60, y: -60, z: 50}
   minSize: {x: 10, y: 20, z: 10}
@@ -713,7 +713,7 @@ MonoBehaviour:
   - {fileID: 13400000, guid: 4317b0e4d6d8e4179891328bfe2daa19, type: 2}
   - {fileID: 13400000, guid: b7d63822d22e94261b2911a641b41d3e, type: 2}
   prefab: {fileID: 4200065356207002, guid: 85e022b312ffb45e8bf95f47874c9774, type: 2}
-  numberOfObjects: 6
+  numberOfObjects: 50
   recycleOffset: 20
   startPosition: {x: -1, y: 0, z: 0}
   minSize: {x: 5, y: 1, z: 1}
@@ -931,7 +931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4199752970996136, guid: 032fc5faca0124a7982dcea905d268fc, type: 2}
-  numberOfObjects: 10
+  numberOfObjects: 50
   recycleOffset: 75
   startPosition: {x: -100, y: -100, z: 100}
   minSize: {x: 10, y: 50, z: 10}
@@ -1047,11 +1047,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1586502368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4259483d45714cc59388f14b5f59638, type: 3}
+  m_Script: {fileID: 11500000, guid: 24c771838f06846cbbb74506de722abc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rootObjects: []
-  gameObject: {fileID: 0}
 --- !u!1 &1946957890
 GameObject:
   m_ObjectHideFlags: 0
