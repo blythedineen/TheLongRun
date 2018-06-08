@@ -29,13 +29,19 @@ public class RunnerS : MonoBehaviour {
         }
 
         if (SceneManager.GetActiveScene().name == "Level1") {
-            if (transform.localPosition.y >= 527) {
+            if (transform.localPosition.x >= 527) {
                 acceleration = 0;
                 jumpVelocity = new Vector3((float)0, (float)0, (float)0);
                 GUIManagerS.endLvl();
             }
         } else if (SceneManager.GetActiveScene().name == "Level3") {
-            if (transform.localPosition.y >= 520) {
+            if (transform.localPosition.x >= 520) {
+                acceleration = 0;
+                jumpVelocity = new Vector3((float)0, (float)0, (float)0);
+                GUIManagerS.endLvl();
+            }
+        } else if (SceneManager.GetActiveScene().name == "Level3") {
+            if (transform.localPosition.x >= 515) {
                 acceleration = 0;
                 jumpVelocity = new Vector3((float)0, (float)0, (float)0);
                 GUIManagerS.endLvl();
