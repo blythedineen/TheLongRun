@@ -46,5 +46,6 @@ public class GUIManagerS : MonoBehaviour {
 
     public static void endLvl() {
         instance.textLevel.text = "Level Complete!";
+        instance.title.SetActive(true);
     }
 }
