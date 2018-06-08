@@ -61,7 +61,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Control.cs" />
     <Compile Include="Assets\Scripts\Follow.cs" />
-    <Compile Include="Assets\Scripts\LevelComplete.cs" />
     <Compile Include="Assets\Scripts\Multi\GameEventManager.cs" />
     <Compile Include="Assets\Scripts\Multi\GUIManager.cs" />
     <Compile Include="Assets\Scripts\Multi\PlatformManager.cs" />

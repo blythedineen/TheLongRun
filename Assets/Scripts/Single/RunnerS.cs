@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class RunnerS : MonoBehaviour {
 
     public static float distanceTraveled;
-    public static Text endLevel;
     public float acceleration;
     private bool touchingPlatform;
     public Vector3 jumpVelocity;
@@ -30,16 +29,16 @@ public class RunnerS : MonoBehaviour {
         }
 
         if (SceneManager.GetActiveScene().name == "Level1") {
-            if (transform.localPosition.y <= 527) {
+            if (transform.localPosition.y >= 527) {
                 acceleration = 0;
-                jumpVelocity = 0;
-                LevelComplete.endLvl();
+                jumpVelocity = new Vector3((float)0, (float)0, (float)0);
+                GUIManagerS.endLvl();
             }
         } else if (SceneManager.GetActiveScene().name == "Level3") {
-            if (transform.localPosition.y <= 520) {
+            if (transform.localPosition.y >= 520) {
                 acceleration = 0;
-                jumpVelocity = 0;
-                LevelComplete.endLvl();
+                jumpVelocity = new Vector3((float)0, (float)0, (float)0);
+                GUIManagerS.endLvl();
             }
         }
     }
@@ -81,5 +80,4 @@ public class RunnerS : MonoBehaviour {
         GetComponent<Rigidbody>().isKinematic = true;
         enabled = false;
     }
-
 }

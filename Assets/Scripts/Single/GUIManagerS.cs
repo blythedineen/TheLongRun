@@ -7,6 +7,7 @@ public class GUIManagerS : MonoBehaviour {
     public Text gameOverText, distanceText, Start_Message;
     private static GUIManagerS instance;
     public GameObject title;
+    public Text textLevel;
 
     void Start() {
         instance = this;
@@ -43,4 +44,7 @@ public class GUIManagerS : MonoBehaviour {
         instance.distanceText.text = distance.ToString("f0");
     }
 
+    public static void endLvl() {
+        instance.textLevel.text = "Level Complete!";
+    }
 }

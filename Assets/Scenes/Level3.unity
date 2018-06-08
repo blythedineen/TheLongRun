@@ -12060,7 +12060,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Complete
+  m_Text: 
 --- !u!222 &1870214317
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13330,6 +13330,7 @@ MonoBehaviour:
   distanceText: {fileID: 901337548}
   Start_Message: {fileID: 712390863}
   title: {fileID: 971416776}
+  textLevel: {fileID: 1870214316}
 --- !u!1 &2068737799
 GameObject:
   m_ObjectHideFlags: 0
