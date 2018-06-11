@@ -1,6 +1,6 @@
 OSXStandalone
 PlayerPath?
-/Users/ayesha/Desktop/game/TheLongRun/game.app
+/Users/ayesha/Desktop/TheLongRun/game.app
 SceneListBegin?
 Assets/Scenes/title_page.unity
 Assets/Scenes/main_scene.unity
@@ -163,4 +163,5 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 ada46f4e2cdd8ae199b9a275eef8dc74 Assembly-CSharp.dll:.Runner2
 51c0ecd24dff72f3157d1d6f5ebb74da Assembly-CSharp.dll:.PlatformManagerS
 528adac9b46a1f1f01a40a3d318453e4 Assembly-CSharp.dll:.SkylineManagerS
-b5f8f43660760a4121dd3acf5260919a Assembly-CSharp.dll:.GUIManagerS
+db50c47e4050dc33bfeebbba053aef64 Assembly-CSharp.dll:.GUIManagerS
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DontDestroy
